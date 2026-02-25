@@ -20,5 +20,7 @@ jobs:
           java-version: 17
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v5
+      - name: Check Kotlin version
+        run: ./gradlew --version
       - name: Build
         run: ./gradlew build
